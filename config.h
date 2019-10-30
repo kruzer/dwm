@@ -34,6 +34,7 @@ static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
 	{ "Firefox",  NULL,       NULL,       1 << 5,       0,           -1 },
+	{ "feh",  		NULL,       NULL,       0,       			1,           -1 },
 };
 
 /* layout(s) */
@@ -71,7 +72,7 @@ static const char *downvol[] = { "amixer", "set", "Master", "4-", NULL };
 static const char *mute[] = { "amixer", "set", "Master", "toggle", NULL };
 static const char *googlecmd[] = { "surf", "-z", "2", "google.com", NULL };
 static const char *wallpapercmd[] = { "feh", "--bg-max","-r",  "--randomize",	"/home/mikey/Pictures/wallpapers", NULL };
-static const char *helpkeycmd[] = { "feh", "--bg-max", "/home/mikey/Pictures/dwm-shortcuts.png", NULL };
+static const char *helpkeycmd[] = { "feh", "--geometry=1660x580+700+600", "-Z", "/home/mikey/Pictures/dwm-shortcuts.png", NULL };
 
 
 static Key keys[] = {
